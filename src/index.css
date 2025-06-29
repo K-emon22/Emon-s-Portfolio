@@ -1,0 +1,92 @@
+
+
+[data-theme="light"] .my-btn {
+  background-color: #1ea1f1;
+  border-color: #1ea1f1;
+}
+[data-theme="light"] .my-btn:hover {
+  background-color: #1c96e1;
+  border-color: #1c96e1;
+}
+
+
+
+@keyframes borderGlow {
+  0% {
+    border-color: #3b82f6; 
+    box-shadow: 0 0 5px #3b82f6;
+  }
+  50% {
+    border-color: #2563eb; 
+    box-shadow: 0 0 15px #2563eb;
+  }
+  100% {
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px #3b82f6;
+  }
+}
+
+.animate-border-glow {
+  animation: borderGlow 2s infinite ease-in-out;
+}
+
+
+
+
+
+
+.custom-btn {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem; /* Tailwind rounded-lg */
+  box-shadow: 0 8px 0 #1e40af; /* Tailwind blue-900 shadow */
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(59, 130, 246, 0.5); /* glow */
+}
+
+.custom-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #1e3a8a;
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.custom-btn:hover .button__icon svg {
+  transform: rotate(15deg) scale(1.2);
+  filter: drop-shadow(0 0 5px #00eaff);
+}
+
+.button__text {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.custom-btn:hover .button__text {
+  color: #00eaff;
+}
