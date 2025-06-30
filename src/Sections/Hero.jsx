@@ -14,11 +14,11 @@ const Hero = () => {
           <div className="flex justify-center md:justify-start md:items-start items-center mb-auto ">
             <img
               className="rounded-2xl border-4 mt-1 border-blue-300 shadow-lg w-full max-w-sm animate-border-glow"
-              src="public/IMG_20250522_235646.jpg"
+              src="IMG_20250522_235646.jpg"
               alt="Md Emon Sheikh"
             />
           </div>
-
+{/* https://i.ibb.co/z1r6sms/IMG-20250522-235646.jpg */}
           <div className="flex flex-col  gap-5  ">
             <h1 className="text-4xl font-extrabold text-blue-600 text-center md:text-start">
               Md Emon Sheikh
