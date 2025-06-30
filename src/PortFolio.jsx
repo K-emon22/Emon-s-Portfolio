@@ -1,8 +1,7 @@
 import "./App.css";
 import "./index.css";
-import {useState} from "react";
-import {FaGithub} from "react-icons/fa";
-import {FaLinkedin, FaDiscord} from "react-icons/fa";
+import {useEffect, useState} from "react";
+
 import Hero from "./Sections/Hero";
 import Nav from "./Sections/Nav";
 import LoadingSpinner from "./Sections/LoadingSpinner";
@@ -10,10 +9,11 @@ import AboutMe from "./Sections/AboutMe";
 import Skill from "./Sections/Skill";
 import Education from "./Sections/Education";
 import Contact from "./Sections/Contact";
+import Project from "./Sections/Project";
 function PortFolio() {
   const [loding, setLoding] = useState(true);
 
-  useState(() => {
+  useEffect(() => {
     setTimeout(() => {
       setLoding(false);
     }, 200);
@@ -26,31 +26,28 @@ function PortFolio() {
       <div className="sticky z-50 top-0 ">
         <Nav></Nav>
       </div>
-      <div>
-        <Hero></Hero>
+      <div id="hero" className="scroll-mt-24">
+        <Hero />
       </div>
 
-      <div>
-        {" "}
+      <div id="about" className="scroll-mt-24">
         <AboutMe></AboutMe>
       </div>
 
-      {/* skills  */}
-
-      <div>
-        {" "}
-        <Skill></Skill>
+      <div id="skills" className="scroll-mt-24">
+        <Skill />
       </div>
 
-      {/* Education  */}
-      <div>
-        <Education></Education>
+      <div id="projects" className="scroll-mt-24">
+        <Project></Project>
       </div>
 
-      {/* Contact  */}
-      <div>
-        {" "}
-        <Contact></Contact>
+      <div id="education" className="scroll-mt-24">
+        <Education />
+      </div>
+
+      <div id="contact" className="scroll-mt-24">
+        <Contact />
       </div>
     </div>
   );

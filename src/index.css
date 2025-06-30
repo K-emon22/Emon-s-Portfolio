@@ -1,5 +1,3 @@
-
-
 [data-theme="light"] .my-btn {
   background-color: #1ea1f1;
   border-color: #1ea1f1;
@@ -9,15 +7,13 @@
   border-color: #1c96e1;
 }
 
-
-
 @keyframes borderGlow {
   0% {
-    border-color: #3b82f6; 
+    border-color: #3b82f6;
     box-shadow: 0 0 5px #3b82f6;
   }
   50% {
-    border-color: #2563eb; 
+    border-color: #2563eb;
     box-shadow: 0 0 15px #2563eb;
   }
   100% {
@@ -30,18 +26,13 @@
   animation: borderGlow 2s infinite ease-in-out;
 }
 
-
-
-
-
-
 .custom-btn {
   background-color: #3b82f6; /* Tailwind blue-500 */
   border: none;
   outline: none;
   color: #fff;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 8px 8px;
   border-radius: 0.75rem; /* Tailwind rounded-lg */
   box-shadow: 0 8px 0 #1e40af; /* Tailwind blue-900 shadow */
   transition: all 0.3s ease;
@@ -89,4 +80,8 @@
 
 .custom-btn:hover .button__text {
   color: #00eaff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
