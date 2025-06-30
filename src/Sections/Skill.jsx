@@ -56,7 +56,7 @@ const Skill = () => {
       <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
 
       <div className="flex flex-col gap-10">
-        <Marquee speed={90} gradient={false}>
+        <Marquee speed={30} gradient={false}>
           {galleryImages.map((skill, index) => (
             <div key={index} className="mx-4 text-center">
               <img
@@ -70,7 +70,7 @@ const Skill = () => {
             </div>
           ))}
         </Marquee>
-        <Marquee speed={100} gradient={false} direction="right">
+        <Marquee speed={30} gradient={false} direction="right">
           {galleryImages.map((skill, index) => (
             <div key={index} className="mx-4 text-center">
               <img

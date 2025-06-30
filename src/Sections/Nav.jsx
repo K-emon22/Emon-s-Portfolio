@@ -108,7 +108,12 @@ const Nav = () => {
       </div>
 
       <nav className=" flex flex-row justify-between bg-blue-400/60 backdrop-blur-lg px-[2%] lg:px-[5%] my-1 border-2 py-1  rounded-b-0 rounded-t-lg">
-        <div>Logo </div>
+        <div className="my-auto font-serif w-23 text-2xl">
+          <img
+            src="Screenshot_2025-06-30_at_5.54.40_PM-removebg-preview.png"
+            alt="Logo"
+          />
+        </div>
         <div className=" hidden md:flex flex-row md:gap-2 lg:gap-10 my-auto font-semibold ">
           {links}
         </div>

@@ -18,8 +18,8 @@ const Hero = () => {
               alt="Md Emon Sheikh"
             />
           </div>
-{/* https://i.ibb.co/z1r6sms/IMG-20250522-235646.jpg */}
-          <div className="flex flex-col  gap-5  ">
+
+          <div data-aos="fade-up" className="flex flex-col  gap-5  ">
             <h1 className="text-4xl font-extrabold text-blue-600 text-center md:text-start">
               Md Emon Sheikh
             </h1>

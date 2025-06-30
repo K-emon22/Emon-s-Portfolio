@@ -149,7 +149,7 @@ const Project = () => {
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
         My Projects
       </h2>
-      <div className="grid gap-6">
+      <div data-aos="fade-up" className="grid gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -249,7 +249,7 @@ const Project = () => {
           tabIndex={-1}
         >
           <div
-            className="modal-box max-w-2xl w-full px-4"
+            className="modal-box w-4/5  mt-35 px-[2%] lg:px-[5%] "
             onClick={(e) => e.stopPropagation()}
           >
             <h3 className="text-2xl font-bold mb-2">{selected.title}</h3>
@@ -265,11 +265,12 @@ const Project = () => {
                   <img
                     src={imgUrl}
                     alt={`${selected.title} ${i + 1}`}
-                    className="w-full h-64 object-cover rounded"
+                    className="w-full h-64 object-cover rounded  border-2"
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
+            
             <div className="text-gray-700 text-sm mb-4">{selected.details}</div>
             <div className="mb-4 text-gray-700 text-sm max-w-md">
               <h4 className="font-semibold mb-2 text-gray-800">Features:</h4>
@@ -289,6 +290,8 @@ const Project = () => {
                 ))}
               </ul>
             </div>
+
+
             <div className="flex gap-4 justify-end mt-6">
               <a
                 href={selected.github}

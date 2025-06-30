@@ -1,5 +1,5 @@
-import { Mail, Phone, MessageCircle, Linkedin, MapPin, Send } from "lucide-react";
-import { useRef } from "react";
+import {Mail, Phone, MessageCircle, Linkedin, MapPin, Send} from "lucide-react";
+import {useRef} from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_vr5s7nk",    // Your EmailJS Service ID
-        "template_8lr0vam",   // Your EmailJS Template ID
+        "service_vr5s7nk", 
+        "template_8lr0vam", 
         form.current,
-        "L0kuzBfo2LgYfL91p"  // Your EmailJS Public Key
+        "L0kuzBfo2LgYfL91p" 
       )
       .then(
         () => {
@@ -47,7 +47,10 @@ const Contact = () => {
 
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 p-2 items-start border rounded-lg mb-16">
         <div className="flex flex-col gap-5 shadow-xl shadow-blue-400 rounded-lg h-full border-gray-300 border-2 p-3">
-          <a href="mailto:emonsheikhkhalid2@gmail.com" className="hover:underline">
+          <a
+            href="mailto:emonsheikhkhalid2@gmail.com"
+            className="hover:underline"
+          >
             <h1 className="flex items-center gap-3 text-black bg-blue-100 hover:bg-blue-300 hover:scale-102 transition-transform py-4 justify-center px-2 rounded-full border-2 border-blue-400 font-semibold">
               <Mail className="text-blue-600" />
               emonsheikhkhalid2@gmail.com
@@ -73,12 +76,7 @@ const Contact = () => {
             </h1>
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/emon-sheikh-khalid"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
+          <a className="hover:underline">
             <h1 className="flex items-center gap-3 text-black bg-blue-100 hover:bg-blue-300 hover:scale-102 transition-transform py-4 justify-center px-2 rounded-full border-2 border-blue-400 font-semibold">
               <Linkedin className="text-blue-700" />
               LinkedIn
@@ -100,7 +98,9 @@ const Contact = () => {
             </h2>
 
             <div>
-              <label className="text-sm font-medium text-gray-700">Your Name</label>
+              <label className="text-sm font-medium text-gray-700">
+                Your Name
+              </label>
               <input
                 type="text"
                 name="from_name"
@@ -111,7 +111,9 @@ const Contact = () => {
             </div>
 
             <div>
-              <label className="text-sm font-medium text-gray-700">Your Email</label>
+              <label className="text-sm font-medium text-gray-700">
+                Your Email
+              </label>
               <input
                 type="email"
                 name="from_email"
@@ -122,7 +124,9 @@ const Contact = () => {
             </div>
 
             <div>
-              <label className="text-sm font-medium text-gray-700">Message</label>
+              <label className="text-sm font-medium text-gray-700">
+                Message
+              </label>
               <textarea
                 name="message"
                 required
