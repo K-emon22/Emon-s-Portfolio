@@ -49,7 +49,7 @@ function PortFolio() {
         <AboutMe />
       </div>
 
-      <div id="skills" className="scroll-mt-24" data-aos="zoom-out">
+      <div id="skills" className="scroll-mt-24" >
         <Skill />
       </div>
 

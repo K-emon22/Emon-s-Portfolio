@@ -149,7 +149,7 @@ const Project = () => {
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
         My Projects
       </h2>
-      <div data-aos="fade-up" className="grid gap-6">
+      <div className="grid gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
