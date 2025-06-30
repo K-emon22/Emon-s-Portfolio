@@ -101,7 +101,7 @@ const Nav = () => {
       </select> */}
       </div>
 
-      <nav className=" sticky z-50 top-0 flex flex-row justify-between bg-blue-400/60 backdrop-blur-lg px-[2%] lg:px-[5%] my-1 border-2 py-1  rounded-b-lg">
+      <nav className=" flex flex-row justify-between bg-blue-400/60 backdrop-blur-lg px-[2%] lg:px-[5%] my-1 border-2 py-1  rounded-b-0 rounded-t-lg">
         <div>Logo </div>
         <div className=" hidden md:flex flex-row md:gap-2 lg:gap-10 my-auto font-semibold ">
           {links}

@@ -8,13 +8,13 @@ const Hero = () => {
     <div>
       <section
         id="hero"
-        className=" flex items-center justify-center px-[5%] py-10 bg-white"
+        className=" mt-16 flex items-center justify-center  mx-[2%] lg:mx-[5%] rounded-lg"
       >
         <div className="grid grid-cols-1  md:grid-cols-2 gap-10 lg:gap-0 w-full max-w-7xl">
-          <div className="flex justify-center lg:justify-start lg:items-start items-center mb-auto ">
+          <div className="flex justify-center md:justify-start md:items-start items-center mb-auto ">
             <img
               className="rounded-2xl border-4 mt-1 border-blue-300 shadow-lg w-full max-w-sm animate-border-glow"
-              src="https://i.ibb.co/C5p0y8C1/IMG-20250522-235646.jpg"
+              src="public/IMG_20250522_235646.jpg"
               alt="Md Emon Sheikh"
             />
           </div>

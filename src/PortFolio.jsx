@@ -6,6 +6,10 @@ import {FaLinkedin, FaDiscord} from "react-icons/fa";
 import Hero from "./Sections/Hero";
 import Nav from "./Sections/Nav";
 import LoadingSpinner from "./Sections/LoadingSpinner";
+import AboutMe from "./Sections/AboutMe";
+import Skill from "./Sections/Skill";
+import Education from "./Sections/Education";
+import Contact from "./Sections/Contact";
 function PortFolio() {
   const [loding, setLoding] = useState(true);
 
@@ -18,23 +22,36 @@ function PortFolio() {
     return <LoadingSpinner></LoadingSpinner>;
   }
   return (
-    <div className=" ">
-      <Nav></Nav>
-      <Hero></Hero>
+    <div className=" px-0.5 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50">
+      <div className="sticky z-50 top-0 ">
+        <Nav></Nav>
+      </div>
+      <div>
+        <Hero></Hero>
+      </div>
 
-      {/* about me */}
-
-      <div className="border-4">about me</div>
+      <div>
+        {" "}
+        <AboutMe></AboutMe>
+      </div>
 
       {/* skills  */}
 
-      <div className="border-4">skills</div>
+      <div>
+        {" "}
+        <Skill></Skill>
+      </div>
 
       {/* Education  */}
-      <div className=" border-4 ">Educatin</div>
+      <div>
+        <Education></Education>
+      </div>
 
       {/* Contact  */}
-      <div></div>
+      <div>
+        {" "}
+        <Contact></Contact>
+      </div>
     </div>
   );
 }
